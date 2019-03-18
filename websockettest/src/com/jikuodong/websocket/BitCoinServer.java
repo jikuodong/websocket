@@ -19,6 +19,14 @@ public class BitCoinServer {
     // 与某个客户端的连接会话，需要通过他来给客户端发送数据
     private Session session;
 
+    /**
+     *  有浏览器链接过来的时候被调用
+     * @method onOpen
+     * @author JKD
+     * @param session
+     * @return void
+     * @data 2019/3/18 9:53
+     */
     @OnOpen
     public void onOpen(Session session){
         this.session = session;
